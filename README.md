@@ -6,7 +6,7 @@ Hello all! This project is about simplifying the data collection process of the 
 This package is about simplifying the data collection process of the IMU calibration algorithm for the users and getting more accurate results with the help of GUI. 
     
 ## imu_calibration: 
-This package sensor model for Imu calibrated data is implemented in imu_calibration_node. This package subscribes raw data from imu and after filtering publish calibrated data which will use in further process. This package also contains madgwick's filter for oriention. Filter is merged with imu_calibration_node.
+In this package sensor model for Imu calibrated data is implemented in imu_calibration_node. This package subscribes raw data from imu and after filtering publish calibrated data which will use in further process. This package also contains madgwick's filter for oriention. Filter is merged with imu_calibration_node.
 
 To get more informatio please see the README file in the perticuler directory.
 
