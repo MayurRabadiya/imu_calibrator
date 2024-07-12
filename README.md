@@ -17,3 +17,5 @@ imu_calibration
 imu_calibrater
 │   README.md
 ```
+## IMU Calibrator GUI
+![Home Page](imu_calibrater/gui/picture/gui.png)
