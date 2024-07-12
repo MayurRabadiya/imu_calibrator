@@ -1,0 +1,14 @@
+<launch>
+
+
+  
+    <node name="serial_node"        pkg="rosserial_python"      type="serial_node.py">
+    <param name="port"              type="string"               value="/dev/ttyUSB0"/>
+    <param name="baud"              type="int"                  value="66800"/>
+    </node>
+
+  	<node pkg="imu_calibrater" type="ArduinoToRos" name="ArduinoToRos" output="screen" />
+   
+    <!-- <remap from="imu/data_new" to="GETjag/imu/date_new"/> -->
+    
+</launch> 

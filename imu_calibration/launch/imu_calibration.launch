@@ -1,0 +1,19 @@
+<launch>
+
+  <arg name="file" default="CalibrationConfiguration" />
+  
+    <!-- <node name="serial_node"        pkg="rosserial_python"      type="serial_node.py">
+    <param name="port"              type="string"               value="/dev/ttyUSB0"/>
+    <param name="baud"              type="int"                  value="115200"/>
+    </node> -->
+    
+    <node pkg="imu_calibration" type="imu_calibration" name="imu_calibration_node" output="screen" >
+        <rosparam command="load" file="$(find imu_calibration)/config/CalibrationConfiguration_new_lsm.yaml"/>
+        <param name="calibration" value="true" />
+        <param name="publish_tf" value="false" />
+        <param name="remove_gravity_vector" value="false" />
+        <param name="xsens_mti" value="false" />
+        <param name="lsm6dox" value="true" />
+    </node>
+
+</launch> 

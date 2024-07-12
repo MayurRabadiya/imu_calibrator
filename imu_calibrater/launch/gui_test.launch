@@ -1,0 +1,12 @@
+<launch>
+
+<node pkg="operator_interface" name="operator_interface" type="operator_interface" output="screen" required="true">
+</node>
+
+<group ns="GETjag1">
+	<param name="robot_type" value="GETjag" />
+
+	<param name="test_node/gui/CalibrationWidget" value="CalibrationWidget" />
+</group>
+
+</launch>

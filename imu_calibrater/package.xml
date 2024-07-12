@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+	<name>imu_calibrater</name>
+	<version>0.0.0</version>
+	<description>The imu_calibrater package</description>
+
+	<maintainer email="ezgisena@todo.todo">ezgisena</maintainer>
+
+	<license>TODO</license>
+
+	<buildtool_depend>catkin</buildtool_depend>
+	<build_depend>roscpp</build_depend>
+	<build_depend>std_msgs</build_depend>
+	<build_depend>sensor_msgs</build_depend>
+	<build_depend>geometry_msgs</build_depend>
+	<depend>operator_interface</depend>
+	<depend>imu_msg</depend>
+
+</package>
